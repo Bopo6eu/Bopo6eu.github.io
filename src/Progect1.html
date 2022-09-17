@@ -6,11 +6,27 @@
 	<meta name="robots" content="all">
 	<title>Фрилансер-профи</title>
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/preloader.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/Animated.css">
 </head>
 
 <body>
-
+<div class="preloader">
+  <div class="preloader__row">
+    <div class="preloader__item"></div>
+    <div class="preloader__item"></div>
+  </div>
+</div>
+<script>
+  window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 500);
+  }
+</script>
 <header>
 	<nav>
 		<div class="name">
@@ -32,8 +48,8 @@
 	<div class="title_container">
 		<h1>Привет<br>Я Денис Воробей</h1>
 		<h4>Занимаю разработкой сайтов для вас :)</h4>
-		<input type="submit" value="Обо мне">
-		<input type="submit" value="Мои работы">
+		<input type="button" value="Обо мне">
+		<input type="button" value="Мои работы">
 	</div>
 </div>
 <div class="about_me">
@@ -84,31 +100,37 @@
 		<h3>Название проекта</h3>
 		<h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. At pariatur, aut natus! Magni earum eveniet autem cum, hic, ab ut expedita minus eius illo facilis. Provident deleniti cupiditate qui veniam quod ullam dignissimos dolorem quas facere molestias, quam sint non delectus iure distinctio eos ut aliquid at sapiente autem adipisci aliquam nam! Voluptate veniam rem magni deserunt maiores quis soluta?</h5>
 	</div>
-	<input type="submit" value="Visit live site">
+	<a href="#">посетить сайт</a>
 </div>
 <div class="price">
 	<h2>Расчет стоимости</h2>
 	<div class="price_item">
 		<h3>тип сайта</h3>
+		<div class="clear"></div>
 		<select name="list1" id="list">
 			<option value="opt1">Сайт-визитка          </option>
 			<option value="opt2">Профессиональный сайт</option>
 		</select>
 	</div>
+	<div class="clear"></div>
 	<div class="price_item">
 		<h3>дизайн</h3>
+		<div class="clear"></div>
 		<select name="list2" id="list">
 			<option value="opt3">сложный               </option>
 			<option value="opt4">простой</option>
 		</select>
 	</div>
+	<div class="clear"></div>
 	<div class="price_item">
 		<h3>адаптивность</h3>
+		<div class="clear"></div>
 		<select name="list3" id="list">
 			<option value="opt5">кроссбраузерность           </option>
 			<option value="opt6">под один какой-либо браузер</option>
 		</select>
 	</div>
+	<div class="clear"></div>
 	<ul>
 		<li>	
 			<h3>сроки    </h3>
@@ -123,6 +145,7 @@
 			<p>0</p>
 		</li>
 	</ul>
+	<div class="clear"></div>
 </div>
 <div class="state">
 	<h2>Немного статистики</h2>
@@ -174,26 +197,22 @@
 				<img src="img/phone.png">
 				<p>8(800)5553535</p>
 			</li>
+			<li class="clear"></li>
 		</ul>
 	</div>	
+	<div class="clear"></div>
 	<h3>Оставьте мне сообщение</h3>
-	<input type="text" name="name_text" placeholder="Введите ваше имя" >
-	<input type="text" name="email_text" placeholder="Введите ваш Email">
+	<div class="inpuut">
+		<input type="text" name="name_text" placeholder="Введите ваше имя" >
+		<input type="text" name="email_text" placeholder="Введите ваш Email">
+	</div>
 	<textarea name="name3" id="3" cols="40" rows="10" placeholder="Напишите ваши пожелания"></textarea>
 	<div class="kn">
 		<input type="submit" value="Отправить">
 	</div>
-	<ul>
-		<li><img src="img/fb.png"></li>
-		<li><img src="img/in.png"></li>
-		<li><img src="img/inst.png"></li>
-		<li><img src="img/bird.png"></li>
-		<li><img src="img/ball.png"></li>
-		<li><img src="img/cat.png"></li>
-	</ul>
 </div>
 <div class="dislocation">
-	<img src="img/map.png" width="100%">
+	
 </div>
 </body>
 
