@@ -4,11 +4,14 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="Веселый, позитивный кабанчик посмотрел на экран твоего смартфона...">
 	<meta name="robots" content="all">
+	<meta name="viewport" content="width=device-width, initial-skale=1.0">
 	<title>Фрилансер-профи</title>
 	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/preloader.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/Animated.css">
+	<link rel="stylesheet" href="js/bootstrap.bundle.js">
 </head>
 
 <body>
@@ -29,27 +32,57 @@
 </script>
 <header>
 	<nav>
-		<div class="name">
-		Денис Воробей
-		</div>
-		<div class="menu">
-			<ul>
-				<li><a href="#">Обо мне</a></li>
-				<li><a href="#">Услуги</a></li>
-				<li><a href="#">Кейсы</a></li>
-				<li><a href="#">Прайс</a></li>
-				<li><a href="#">Отзывы</a></li>
-				<li><a href="#">Контакты</a></li>
-			</ul>
+		<div class="container">
+			<div class="row">
+				<div class="col-xxl-2 col-lg-3 col-7">
+					<div class="name">
+						Денис Воробей
+					</div>
+				</div>
+				<div class="col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">	
+					<div class="menu">
+						<ul>
+							<li><a href="#">Обо мне</a></li>
+							<li><a href="#">Услуги</a></li>
+							<li><a href="#">Кейсы</a></li>
+							<li><a href="#">Прайс</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+					<div class="dropdown">
+						<script type="js/bootstrap.bundle.js"></script>
+						<a class="btn btn-outline-secondary dropdown-toggle white_color" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+    Ссылка выпадающего списка
+						</a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="#">Обо мне</a></li>
+							<li><a class="dropdown-item" href="#">Услуги</a></li>
+							<li><a class="dropdown-item" href="#">Кейсы</a></li>
+							<li><a class="dropdown-item" href="#">Прайс</a></li>
+							<li><a class="dropdown-item" href="#">Отзывы</a></li>
+							<li><a class="dropdown-item" href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
 	</nav>
 </header>
 <div class="face">
-	<div class="title_container">
-		<h1>Привет<br>Я Денис Воробей</h1>
-		<h4>Занимаю разработкой сайтов для вас :)</h4>
-		<input type="button" value="Обо мне">
-		<input type="button" value="Мои работы">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="title_container">
+					<h1>Привет<br>Я Денис Воробей</h1>
+					<h4>Занимаю разработкой сайтов для вас :)</h4>
+					<input type="button" value="Обо мне">
+					<input type="button" value="Мои работы">
+				</div>
+			</div>
+		</div>
 	</div>
 </div>
 <div class="about_me">
@@ -133,19 +166,20 @@
 	<div class="clear"></div>
 	<ul>
 		<li>	
-			<h3>сроки    </h3>
+			<h4>сроки    </h4>
 		</li>
 		<li>
 			<p>   0</p>
 		</li>
 		<li>
-			<h3>стоимость </h3>
+			<h4>стоимость </h4>
 		</li>
 		<li>
 			<p>0</p>
 		</li>
 	</ul>
 	<div class="clear"></div>
+	<div class="pb"></div>
 </div>
 <div class="state">
 	<h2>Немного статистики</h2>
@@ -210,6 +244,16 @@
 	<div class="kn">
 		<input type="submit" value="Отправить">
 	</div>
+	<ul>
+		<li><a href="#"><img src="img/fb.png"></a></li>
+		<li><a href="#"><img src="img/in.png"></a></li>
+		<li><a href="#"><img src="img/inst.png"></a></li>
+		<li><a href="#"><img src="img/bird.png"></a></li>
+		<li><a href="#"><img src="img/ball.png"></a></li>
+		<li><a href="#"><img src="img/cat.png"></a></li>
+		<li class="clear"></li>
+	</ul>
+	<div class="clear"></div>
 </div>
 <div class="dislocation">
 	

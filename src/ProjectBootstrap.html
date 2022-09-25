@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Веселый, позитивный кабанчик посмотрел на экран твоего смартфона...">
+	<meta name="robots" content="all">
+	<meta name="viewport" content="width=device-width, initial-skale=1.0">
+	<title>Макет номер 2</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/StyleHard.css">
+	<link rel="stylesheet" type="text/css" href="css/preloader.css">
+	<link rel="stylesheet" type="text/css" href="css/Animated.css">
+</head>
+<body>
+	<div class="preloader">
+ 		<div class="preloader__row">
+			<div class="preloader__item"></div>
+			<div class="preloader__item"></div>
+		</div>
+	</div>
+	<script>
+		window.onload = function () {
+			document.body.classList.add('loaded_hiding');
+			window.setTimeout(function () {
+				document.body.classList.add('loaded');
+				document.body.classList.remove('loaded_hiding');
+			}, 500);
+		}
+	</script>
+	<header>
+		<nav>
+			<div class="container">
+				<div class="row">
+					<div class="col-xxl-2 col-lg-3 col-7">
+						<div class="name">
+							Денис Воробей
+						</div>
+					</div>
+					<div class="col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">	
+						<div class="menu">
+							<ul>
+								<li><a href="#">Обо мне</a></li>
+								<li><a href="#">Услуги</a></li>
+								<li><a href="#">Кейсы</a></li>
+								<li><a href="#">Прайс</a></li>
+								<li><a href="#">Отзывы</a></li>
+								<li><a href="#">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-5 d-flex d-lg-none flex-column justify-content-center align-items-end">
+						<div class="btn-group">
+							<a class="btn btn-outline-secondary white_color" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+								Навигация
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Обо мне</a></li>
+								<li><a class="dropdown-item" href="#">Услуги</a></li>
+								<li><a class="dropdown-item" href="#">Кейсы</a></li>
+								<li><a class="dropdown-item" href="#">Прайс</a></li>
+								<li><a class="dropdown-item" href="#">Отзывы</a></li>
+								<li><a class="dropdown-item" href="#">Контакты</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<div class="face">
+		<div class="container">
+			<div class="row align-items-center h-100">
+				<div class="col-lg-6">
+					<div class="title_container h-100">
+						<h1>Привет<br>Я Денис Воробей</h1>
+						<h4>Занимаюсь разработкой сайтов для вас :)</h4>
+						<input type="button" value="Обо мне">
+						<input type="button" value="Мои работы">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col-8">
+				<div class="about_me">
+					<h2>Обо мне</h2>
+					<img src="img/mem.png">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tenetur consequatur eos consequuntur sed nostrum similique cupiditate, fugiat nobis enim, pariatur. Recusandae soluta fuga accusantium reprehenderit quisquam exercitationem maxime, nihil.</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat corrupti dignissimos magni possimus ea alias, suscipit quis iste cumque quia exercitationem, facilis error. Nobis, consectetur minus illum, sapiente ullam incidunt?</p>
+					<input type="submit" value="Скачать резюме">
+				</div>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+	<div class="skills">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-lg-12">
+					<h2>Что я умею</h2>
+					<div class="skills_item">
+						<div class="container">
+							<div class="row ">
+								<div class="col-md-6 flex-column">
+									<ul>
+										<li>
+											<img src="img/pc.png">
+											<h3><font color="orange">Веб-дизайнер</font></h3>
+											<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, voluptatibus!</p>
+										</li>
+										<li>
+											<img src="img/sign.png">
+											<h3><font color="orange">Разработка</font></h3>
+											<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, voluptatibus!</p>
+										</li>
+											</div>
+											<div class="col-md-6 flex-column">
+										<li>
+											<img src="img/rocket.png">
+											<h3><font color="orange">СЕО оптимизация</font></h3>
+											<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, voluptatibus!</p>
+										</li>
+										<li>
+											<img src="img/microphone.png">
+											<h3><font color="orange">Маркетинг</font></h3>
+											<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, voluptatibus!</p>
+										</li>
+									</ul>	
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="cases">
+					<h2>Кейсы</h2>
+					<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est obcaecati dolor dolores consequatur architecto sequi dolore molestiae culpa officia eveniet.</h4>
+					<img src="img/cases.jpg">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-4">
+								<div class="cases_item">
+									<h3>Client</h3>
+									<p>какая-то компания</p>
+									<h3>Website</h3>
+									<p>http://www.4to-to.ru</p>
+								</div>
+							</div>
+							<div class="col-sm-8">
+								<div class="cases_iteme">
+									<h3>Название проекта</h3>
+									<h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. At pariatur, aut natus! Magni earum eveniet autem cum, hic, ab ut expedita minus eius illo facilis. Provident deleniti cupiditate qui veniam quod ullam dignissimos dolorem quas facere molestias, quam sint non delectus iure distinctio eos ut aliquid at sapiente autem adipisci aliquam nam! Voluptate veniam rem magni deserunt maiores quis soluta?</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#">посетить сайт</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-1"></div>
+			<div class="col-10">
+				<div class="price">
+					<h2>Расчет стоимости</h2>
+					<div class="price_item">
+						<h3>тип сайта</h3>
+						<div class="clear"></div>
+						<select name="list1" id="list">
+							<option value="1" selected disabled>Выберите пункт</option>
+                        	<option value="2">Сайт-визитка</option>
+                        	<option value="3">Корпоративный сайт</option>
+                        	<option value="4">Интернет-магазин</option>
+							</select>
+					</div>
+					<div class="clear"></div>
+				<div class="price_item">
+						<h3>дизайн</h3>
+						<div class="clear"></div>
+						<select name="list2" id="list">
+							<option value="1" selected disabled>Выберите пункт</option>
+                        	<option value="2">Шаблонный</option>
+                        	<option value="3">Уникальный</option>
+                        	<option value="4">WOW-Дизайн</option>
+						</select>
+					</div>
+					<div class="clear"></div>
+					<div class="price_item">
+						<h3>адаптивность</h3>
+						<div class="clear"></div>
+						<select name="list3" id="list">
+							<option value="1" selected disabled>Выберите пункт</option>
+                        	<option value="2">Только ПК</option>
+                        	<option value="3">Только мобильный сайт</option>
+                        	<option value="4">ПК + Мобильный</option>
+						</select>
+					</div>
+					<div class="clear"></div>
+					<ul>
+						<li>	
+							<h4>сроки    </h4>
+						</li>
+						<li>
+							<p class="zero">   0</p>
+						</li>
+						<li>
+							<h4>стоимость </h4>
+						</li>
+						<li>
+							<p class="zero">0</p>
+						</li>
+					</ul>
+					<div class="clear"></div>
+					<input type="button" value="Отправить заявку">
+				</div>
+			</div>
+			<div class="col-1"></div>
+		</div>
+	</div>
+	<div class="state">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-5"></div>
+				<div class="col-md-12 col-sm-2">
+					<h2>Немного статистики</h2>
+					<div class="state_item">
+						<ul>
+							<li>
+								<img src="img/smile.png">
+								<h3>120</h3>
+								<h4>счастливых клиентов</h4>
+							</li>
+							<li>
+								<img src="img/sign_2.png">
+								<h3>4600</h3>
+								<h4>часов работы</h4>
+							</li>
+							<li>
+								<img src="img/galka.png">
+								<h3>340</h3>
+								<h4>проектов завершено</h4>
+							</li>
+							<li>
+								<img src="img/cup.png">
+								<h3>23</h3>
+								<h4>наград получено</h4>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-5"></div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-2"></div>
+			<div class="col-8">
+				<div class="reviews">
+					<h2>Отзывы</h2>
+					<img src="img/people.png">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam incidunt omnis quos rerum distinctio ullam hic<br> nisi delectus quod error quas deleniti ipsum fugiat optio id molestiae, ex ea voluptatibus.</p>
+					<p><b>Михаил</b>,Ген директор ПАО "Газпром"</p>
+				</div>
+			</div>
+			<div class="col-2"></div>
+		</div>
+	</div>
+	<div class="connection">
+		<div class="container">
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-8">
+					<h2>Мои контакты</h2>
+					<p>Здесь ты можешь выбрать любой способ для связи со мной. Я всегда отвечаю на ваши сообщения!</p>
+					<div class="connection_img">
+						<ul>
+							<li>
+								<img src="img/geo.png">
+								<p>г.Москва</p>
+							</li>
+							<li>
+								<img src="img/message.png">
+								<p>abcdefg@mail.ru</p>
+							</li>
+							<li>
+								<img src="img/phone.png">
+								<p>8(800)5553535</p>
+							</li>
+							<li class="clear"></li>
+						</ul>
+					</div>	
+					<div class="clear"></div>
+					<h3>Оставьте мне сообщение</h3>
+					<div class="inpuut">
+						<input type="text" name="name_text" placeholder="Введите ваше имя" >
+						<input type="text" name="email_text" placeholder="Введите ваш Email">
+					</div>
+					<textarea name="name3" id="3" cols="40" rows="10" placeholder="Напишите ваши пожелания"></textarea>
+					<div class="kn">
+						<input type="submit" value="Отправить">
+					</div>
+					<ul>
+						<li><a href="#"><img src="img/fb.png"></a></li>
+						<li><a href="#"><img src="img/in.png"></a></li>
+						<li><a href="#"><img src="img/inst.png"></a></li>
+						<li><a href="#"><img src="img/bird.png"></a></li>
+						<li><a href="#"><img src="img/ball.png"></a></li>
+						<li><a href="#"><img src="img/cat.png"></a></li>
+						<li class="clear"></li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+				<div class="col-2"></div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+</body>
+</html>
