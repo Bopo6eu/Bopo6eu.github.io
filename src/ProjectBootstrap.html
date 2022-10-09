@@ -39,12 +39,12 @@
 					<div class="col-xxl-6 col-xl-7 col-lg-8 offset-xxl-4 offset-xl-2 offset-lg-1 d-none d-lg-block">	
 						<div class="menu">
 							<ul>
-								<li><a href="#">Обо мне</a></li>
-								<li><a href="#">Услуги</a></li>
-								<li><a href="#">Кейсы</a></li>
-								<li><a href="#">Прайс</a></li>
-								<li><a href="#">Отзывы</a></li>
-								<li><a href="#">Контакты</a></li>
+								<li><a href="#about_me">Обо мне</a></li>
+								<li><a href="#skills">Услуги</a></li>
+								<li><a href="#cases">Кейсы</a></li>
+								<li><a href="#price">Прайс</a></li>
+								<li><a href="#reviews">Отзывы</a></li>
+								<li><a href="#connection">Контакты</a></li>
 							</ul>
 						</div>
 					</div>
@@ -67,7 +67,7 @@
 			</div>
 		</nav>
 	</header>
-	<div class="face">
+	<div class="face section" id="face">
 		<div class="container">
 			<div class="row align-items-center h-100">
 				<div class="col-lg-6">
@@ -81,11 +81,12 @@
 			</div>
 		</div>
 	</div>
-	<div class="container">
+	<div class="ami4ba" id="about_me"></div>
+	<div class="container section">
 		<div class="row">
 			<div class="col-2"></div>
 			<div class="col-8">
-				<div class="about_me">
+				<div class="about_me" >
 					<h2>Обо мне</h2>
 					<img src="img/mem.png">
 					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tenetur consequatur eos consequuntur sed nostrum similique cupiditate, fugiat nobis enim, pariatur. Recusandae soluta fuga accusantium reprehenderit quisquam exercitationem maxime, nihil.</p>
@@ -96,7 +97,7 @@
 			<div class="col-2"></div>
 		</div>
 	</div>
-	<div class="skills">
+	<div class="skills section" id="skills">
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-lg-12">
@@ -140,7 +141,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<div class="cases">
+				<div class="cases section" id="cases">
 					<h2>Кейсы</h2>
 					<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est obcaecati dolor dolores consequatur architecto sequi dolore molestiae culpa officia eveniet.</h4>
 					<img src="img/cases.jpg">
@@ -171,7 +172,7 @@
 		<div class="row">
 			<div class="col-1"></div>
 			<div class="col-10">
-				<div class="price">
+				<div class="price section" id="price">
 					<h2>Расчет стоимости</h2>
 					<div class="price_item">
 						<h3>тип сайта</h3>
@@ -227,7 +228,7 @@
 			<div class="col-1"></div>
 		</div>
 	</div>
-	<div class="state">
+	<div class="state section" id="state">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-5"></div>
@@ -237,22 +238,22 @@
 						<ul>
 							<li>
 								<img src="img/smile.png">
-								<h3>120</h3>
+								<h3 class="numbers">120</h3>
 								<h4>счастливых клиентов</h4>
 							</li>
 							<li>
 								<img src="img/sign_2.png">
-								<h3>4600</h3>
+								<h3 class="numbers">4600</h3>
 								<h4>часов работы</h4>
 							</li>
 							<li>
 								<img src="img/galka.png">
-								<h3>340</h3>
+								<h3 class="numbers">340</h3>
 								<h4>проектов завершено</h4>
 							</li>
 							<li>
 								<img src="img/cup.png">
-								<h3>23</h3>
+								<h3 class="numbers">23</h3>
 								<h4>наград получено</h4>
 							</li>
 						</ul>
@@ -266,7 +267,7 @@
 		<div class="row">
 			<div class="col-2"></div>
 			<div class="col-8">
-				<div class="reviews">
+				<div class="reviews section" id="reviews">
 					<h2>Отзывы</h2>
 					<img src="img/people.png">
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam incidunt omnis quos rerum distinctio ullam hic<br> nisi delectus quod error quas deleniti ipsum fugiat optio id molestiae, ex ea voluptatibus.</p>
@@ -276,7 +277,7 @@
 			<div class="col-2"></div>
 		</div>
 	</div>
-	<div class="connection">
+	<div class="connection section" id="connection">
 		<div class="container">
 			<div class="row">
 				<div class="col-2"></div>
@@ -325,7 +326,10 @@
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript" src="js/Scriptonit.js"></script>
+	<div class="map" id="map"></div>
+	<script type="text/javascript" src="js/jquery-3.6.1.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+	<!--<script type="text/javascript" src="js/Scriptonit.js"></script>-->
+	<script type="text/javascript" src="js/scriptsss.js"></script>
 </body>
 </html>
