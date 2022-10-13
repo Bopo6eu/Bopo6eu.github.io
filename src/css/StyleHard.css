@@ -176,7 +176,8 @@ text-decoration: none;
 	margin-top: 6%;
 	text-align: center;
 }
-.cases img{
+.fotorama img{
+	text-align: center;
 	width: 100%;
 	height: auto;
 	margin: 4% 0px;
@@ -248,24 +249,33 @@ text-decoration: none;
 	padding:20px;
 	background: #eeeeee; 
 }
-.price ul{
-	margin-top: 65px;
-	font-size: 30px;
-	text-decoration: none;
+.calculator_footer p{
+	margin-top: 5%;
+    margin-bottom: 0;
 }
-.price h4{
-	margin-left: 4%;
-	font-weight: bold;
-	float: left;
+.calculator_footer .text{
+    float: left;
 }
-.price li{
-	text-decoration: none;
+
+.calculator_footer .digit{
+    font-size: 29px;
+    float: right;
 }
-.zero{
-	margin-right: 7%;
-	float: right;
+.money{
+    margin-bottom: 0px;
+    font-size: 31px;
 }
-.price input{
+.money p{
+	margin: 0px 15%;
+}
+.days{
+    margin-bottom: 0px;
+    font-size: 31px;
+}
+.days{
+	margin: 0px 15%;
+}
+.but button{
 	margin: 4%;
 	border: 2px solid #63b5ae;
 	border-radius: 5px;
@@ -382,4 +392,62 @@ text-decoration: none;
 }
 .connection ul{
 	margin-left:16%; 
+}
+
+#modal-content {
+    display: none;
+    position: fixed;
+    z-index: 9999999;
+    background: #FFF;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px; 
+    border: 4px solid #337AB7;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+}
+#modal-close {
+    display: inline-block;
+    margin: 10px 6px 4px 6px;
+    text-decoration: none;
+    position: relative;
+    font-size: 16px;
+    padding: 8px 16px;
+    color: #FFF;
+    font-weight: bold;
+    text-transform: uppercase; 
+    background: #337AB7;
+}
+#modal-close:hover {
+    color: #FFF;
+}
+#modal-close:after,
+#modal-close:before {
+    position: absolute;
+    height: 2px;
+    left: 50%;
+    background: #337AB7;
+    bottom: -6px;
+    content: "";
+    transition: all 280ms ease-in-out;
+    width: 0;
+}
+#modal-close:before {
+    top: -6px;
+}
+#modal-close:hover:after,
+#modal-close:hover:before {
+    width: 100%;
+    left: 0;
+}
+.img img {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+ 
+.img img[data-src] {
+  opacity: 0;
 }

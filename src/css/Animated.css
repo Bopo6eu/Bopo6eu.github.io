@@ -125,14 +125,15 @@ nav{
 .kn input:active {
 	transform: scale(1.3);
 }
-.price input{
+.price button{
 	transition: all 0.2s;
 	transform: scale(1);
 }
-.price input:active{
+.price button:active{
 	transform: scale(1.1);
+	color: #63b5ae;
 }
-.price input:hover{
+.price button:hover{
 	border: 2px solid #6f707e;
 	background: #6f707e;
 	color: white;
@@ -148,4 +149,7 @@ nav{
 }
 .connection li a:active {
 	transform: scale(1.4);
+}
+.menu li a.active{
+	color: #EF00DBD4;
 }
