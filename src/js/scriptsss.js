@@ -42,12 +42,12 @@ $(document).ready(function(){
             show = false;
         }
     });
-    let options = {threshold: [0.5]};
+    /*let options = {threshold: [0.5]};
     let observer = new IntersectionObserver(onEntry, options);
     let elements = $('.img');
     elements.each((i,el) =>{
     	observer.observe(el);
-    });
+    });*/
     setTimeout(function(){ 
     	modalwin = document.getElementById('modal-content');
     	modalwin.style.display="block"; 
@@ -55,22 +55,38 @@ $(document).ready(function(){
         	modalwin.style.display="none";            
     	});
 	}, 10000);
-	[].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
+	/*[].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
   		img.setAttribute('src', img.getAttribute('data-src'));
   		img.onload = function() {
    			img.removeAttribute('data-src');
   		};
+	});*/
+    let optionsImg = {
+		threshold: [0.5]
+	};
+	let observerImg = new IntersectionObserver(onEntryImg, optionsImg);
+	let elementsImg = $('.img');
+
+	elementsImg.each((i, el) => {
+		observerImg.observe(el);
 	});
-    
+
+	function onEntryImg(entry) {
+		entry.forEach(change => {
+			if (change.isIntersecting) {
+				change.target.src = change.target.dataset.src;
+			}
+		});
+	}
 });
-function onEntry(entry){
+/*function onEntry(entry){
 	entry.forEach(change => {
 		if (change.isIntersecting){
 			change.target.classList.add('img');
 			change.target.src = change.target.dataset.src;
 		}
 	});
-}
+}*/
 $('a[href^="#"]').click(function() {
 	let valHref = $(this).attr("href");
 	$('html,body').animate({srollTop: $(valHref).offset().top - 60 + "px"});
