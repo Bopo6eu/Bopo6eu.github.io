@@ -42,12 +42,12 @@ $(document).ready(function(){
             show = false;
         }
     });
-    /*let options = {threshold: [0.5]};
+    let options = {threshold: [0.5]};
     let observer = new IntersectionObserver(onEntry, options);
     let elements = $('.img');
     elements.each((i,el) =>{
     	observer.observe(el);
-    });*/
+    });
     setTimeout(function(){ 
     	modalwin = document.getElementById('modal-content');
     	modalwin.style.display="block"; 
@@ -61,7 +61,7 @@ $(document).ready(function(){
    			img.removeAttribute('data-src');
   		};
 	});*/
-    let optionsImg = {
+    /*let optionsImg = {
 		threshold: [0.5]
 	};
 	let observerImg = new IntersectionObserver(onEntryImg, optionsImg);
@@ -77,16 +77,16 @@ $(document).ready(function(){
 				change.target.src = change.target.dataset.src;
 			}
 		});
-	}
+	}*/
 });
-/*function onEntry(entry){
+function onEntry(entry){
 	entry.forEach(change => {
 		if (change.isIntersecting){
 			change.target.classList.add('img');
 			change.target.src = change.target.dataset.src;
 		}
 	});
-}*/
+}
 $('a[href^="#"]').click(function() {
 	let valHref = $(this).attr("href");
 	$('html,body').animate({srollTop: $(valHref).offset().top - 60 + "px"});
