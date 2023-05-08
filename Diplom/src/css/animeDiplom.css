@@ -1,0 +1,19 @@
+nav{
+	position: fixed;
+	z-index: 1000;
+}
+.menu li a{
+	transition: all 0.2s;
+	color: white;
+	display: inline-block;
+	transform: scale(1);
+}
+.menu li a:visited{
+	color:white;
+}
+.menu li a:hover {
+	color: orange;
+}
+.menu li a:active {
+	transform: scale(1.1);
+}
