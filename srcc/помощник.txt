@@ -1,0 +1,43 @@
+пример относительно верного кода
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Выпадающий список с галочками</title>
+  <style>
+    .checkbox-dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .checkbox-dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 200px;
+      border: 1px solid #ddd;
+      padding: 10px;
+    }
+
+    .checkbox-dropdown-content label {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="checkbox-dropdown">
+    <button onclick="toggleDropdown()" class="dropdown-button">Выбрать элементы</button>
+    <div id="myDropdown" class="checkbox-dropdown-content">
+      <label><input type="checkbox" value="значение_1"> Опция 1</label>
+      <label><input type="checkbox" value="значение_2"> Опция 2</label>
+      <label><input type="checkbox" value="значение_3"> Опция 3</label>
+    </div>
+  </div>
+  <script>
+    function toggleDropdown() {
+      var dropdown = document.getElementById("myDropdown");
+      dropdown.style.display = dropdown.style.display === "none" ? "block" : "none";
+    }
+  </script>
+</body>
+</html>

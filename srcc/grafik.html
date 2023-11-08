@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>График из массива JavaScript с выпадающим списком</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+</head>
+<body>
+  
+  <select id="selectData">
+    <option value="data1">Данные 1</option>
+    <option value="data2">Данные 2</option>
+    <option value="data3">Данные 3</option>
+    <option value="data4">Данные 4</option>
+  </select>
+  <canvas id="myChart"></canvas>
+  <script>
+    // Задаем данные для графика в виде объекта
+    var data = {
+      data1: {
+        labels: ['1999', '2000', '2001', '2002','2003','2004','2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019'],
+        values: [69267, 69678, 64437, 51856, 0, 0, 0, 64882, 64124, 68013, 51024, 50787, 64679, 77062, 71865, 74670, 63244, 58406, 57004, 58301, 57281],
+        color: 'rgba(255, 99, 132, 1)'
+        
+      },
+      data2: {
+        labels: ['1999', '2000', '2001', '2002','2003','2004','2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019'],
+        values: [2287, 2490, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        color: 'rgba(54, 162, 235, 1)'
+      },
+      data3: {
+        labels: ['1999', '2000', '2001', '2002','2003','2004','2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019'],
+        values: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 40, 46, 54, 0, 0],
+        color: 'rgba(255, 206, 86, 1)'
+      },
+      data4: {
+        labels: ['1999', '2000', '2001', '2002','2003','2004','2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019'],
+        values: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 40, 46, 54, 0, 0],
+        color: 'rgba(255, 26, 86, 1)'
+      }
+    };
+
+    // Получаем элементы DOM для выпадающего списка и холста
+    var selectData = document.getElementById('selectData');
+    var canvas = document.getElementById('myChart');
+
+    // Получаем контекст для рисования графика на холсте
+    var ctx = canvas.getContext('2d');
+
+    // Создаем новый график с помощью библиотеки Chart.js
+    var myChart = new Chart(ctx, {
+      type: 'line', // Задаем тип графика
+      data: {
+        labels: data[selectData.value].labels, // Задаем метки для оси X
+        datasets: [{
+          label: 'Данные из массива JavaScript', // Задаем название набора данных
+          data: data[selectData.value].values, // Задаем значения для оси Y
+          fill: false, // Задаем, что график не должен быть заштрихован
+          borderColor: data[selectData.value].color, // Задаем цвет границ линии
+          borderWidth: 1 // Задаем толщину границ линии
+        }]
+      },
+      options: {
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true // Задаем, что ось Y должна начинаться с 0
+            }
+          }]
+        }
+      }
+    });
+
+    // Обработчик события изменения значения выпадающего списка
+    selectData.addEventListener('change', function() {
+      // Обновляем данные для графика
+      myChart.data.labels = data[selectData.value].labels;
+      myChart.data.datasets[0].data = data[selectData.value].values;
+      myChart.data.datasets[0].borderColor = data[selectData.value].color;
+      // Обновляем график
+      myChart.update();
+    });
+  </script>
+</body>
+</html>
